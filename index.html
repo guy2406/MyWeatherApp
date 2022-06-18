@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+        <header>
+            <p><h2>weather history</h2><br></p>
+            <div class="elmemIntitle">
+                <p class="leftP">select a city from the list:</p>
+                <select id="city-select" name="city" onchange="changeBgColor(this)">
+                    <option value=""></option>
+                    <option value=url('Bgnd/paris.jpg')>Paris</option>
+                    <option value=url('Bgnd/jerusalem.jpg')>Jerusalem</option>
+                    <option value="url('Bgnd/Tokyo.jpg')">Tokyo</option>
+                    <option value=url('Bgnd/Rome.jpg')>Rome</option>
+                    <option value=url('Bgnd/London.jpg')>London</option>
+                </select>
+                <p>how many days ago do you want to <br> see data from the selected city:</p>
+                <input class="selector" type="number" id="quantity" name="quantity" value="0" placeholder="select a number" min="1" max="7" onclick="getDays()">
+                <input type="submit" id="subId" onclick="dataTOSubmit()">    
+            </div>
+        </header>
+        <br>
+        <div class="container">
+            <main id="box" class="center">
+            </main>
+            <div class="right">
+                <h2>results</h2>
+                <p>condition is:</p>
+                <div id="condition"></div>
+                <img src="" class="icon">
+            </div>    
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    /* box-sizing: border-box; */
+    padding:0;
+    /* border-radius: 3px; */
+}
+body{
+    background-color: lightblue;
+    height: 100vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+header{
+    background-color: #314DCC;
+    color:white;
+    margin:1rem;
+    padding:1rem;
+}
+main{
+    /* display:flex;
+    flex:1; */
+    width: 200px;
+    height: 200px;
+   
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+   
+    width: 40%;
+    background-repeat: no-repeat; /* Do not repeat the image */  
+}
+.elmemIntitle{
+    display:flex;
+    flex:1;
+    text-align: center;
+}
+select{
+   margin-left:2rem;
+   margin-right:2rem;
+}
+.selector{
+    margin-left:2rem;
+    margin-right:2rem; 
+}
+.container{
+    display:flex;
+    flex:1;
+}
+.right{
+    margin-right:9rem; 
+}
